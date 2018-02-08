@@ -7,7 +7,6 @@ def hello():
 
 @app.route("/<name>")
 def hellomoto(name):
-    import ipdb; ipdb.set_trace()
     print("path=%s" % (request.path))
     return render_template("demo.html", name=name)
 
